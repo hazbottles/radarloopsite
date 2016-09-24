@@ -1,0 +1,20 @@
+<h1>Select images you wish to include</h1>
+
+
+<form action="{% url 'makegiffromlist' %}" method="post">
+{% csrf_token %}
+<input type="submit" value="Click here to generate .gif" /><br/>
+
+{% for  imagepath, imagetime in imagepathlist %}
+	<input type="checkbox" name="imagepaths" value="{{ imagepath }}" /> 
+
+	<label> {{ imagetime }}  </label><br/>
+<!-- thumbnails?
+	<img width="50" height="50" src="{{ thumbpath }}">
+-->
+{% endfor %}
+<input type="submit" value="Click here to generate .gif" /><br/>
+
+
+
+</form>

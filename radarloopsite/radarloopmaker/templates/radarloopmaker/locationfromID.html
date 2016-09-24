@@ -1,0 +1,18 @@
+<h1>Make a .gif loop to latest radar scan:</h1>
+<!--
+/radarloopmaker/makegiftolatest/
+-->
+<form action="{% url 'makegiftolatest' %}" method="post">{% csrf_token %}
+Range (km):
+{% for radar in radar_DB_list %}
+    <input type="radio" name="chosenID" value="{{ radar.radarID }}" />
+<!--
+    id="choice{{ forloop.counter }}"
+-->
+    <label>{{ radar.range }}</label>
+{% endfor %}
+<br/>
+Number of frames: <input type="text" name="noofframes" value="12"/>
+<br/>
+<input type="submit" value="Make .gif" /><br/>
+</form>

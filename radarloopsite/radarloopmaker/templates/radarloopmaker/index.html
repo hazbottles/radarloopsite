@@ -1,0 +1,63 @@
+{% load staticfiles %}
+
+<h2>Click on the radar for which you wish to generate a .gif loop</h2>
+<div id="aus-radar-map">
+<img name="australia-radar-map" src="{% static "radarloopmaker/australia-radar-map.png" %}" width="589" height="414" border="0" usemap="#m_australia-radar-map" alt="">
+     <map name="m_australia-radar-map">
+     <area shape="poly" coords="221,43,233,43,233,31,225,32,265,32,265,22,225,22,225,32,233,31,221,31,221,43" href="{%url 'locationfromID' 'IDR773' %}" alt="Warruwi" title="Warruwi">
+     <area shape="poly" coords="255,49,267,49,267,37,263,42,288,42,288,32,263,32,263,42,267,37,255,37,255,49" href="{%url 'locationfromID' 'IDR093' %}" alt="Gove" title="Gove">
+     <area shape="poly" coords="209,51,209,39,197,39,199,46,199,36,165,36,165,46,199,46,197,39,197,51,209,51" href="{%url 'locationfromID' 'IDR633' %}" alt="Darwin (Berrimah)" title="Darwin (Berrimah)">
+     <area shape="poly" coords="304,53,316,53,316,41,312,48,342,48,342,38,312,38,312,48,316,41,304,41,304,53" href="{%url 'locationfromID' 'IDR783' %}" alt="Weipa" title="Weipa">
+     <area shape="poly" coords="212,71,224,71,224,59,223,69,269,69,269,59,223,59,223,69,224,59,212,59,212,71" href="{%url 'locationfromID' 'IDR423' %}" alt="Katherine (Tindal)" title="Katherine (Tindal)">
+     <area shape="poly" coords="182,81,182,69,170,69,174,77,174,67,127,67,127,77,174,77,170,69,170,81,182,81" href="{%url 'locationfromID' 'IDR073' %}" alt="Wyndham" title="Wyndham">
+     <area shape="poly" coords="383,89,395,89,395,77,392,81,431,81,431,71,392,71,392,81,395,77,383,77,383,89" href="{%url 'locationfromID' 'IDR413' %}" alt="Willis Island" title="Willis Island">
+     <area shape="poly" coords="289,93,289,81,277,81,282,88,282,78,216,78,216,88,282,88,277,81,277,93,289,93" href="{%url 'locationfromID' 'IDR363' %}" alt="Mornington Island (Gulf of Carpentaria)" title="Mornington Island (Gulf of Carpentaria)">
+     <area shape="poly" coords="341,95,353,95,353,83,350,90,382,90,382,80,350,80,350,90,353,83,341,83,341,95" href="{%url 'locationfromID' 'IDR193' %}" alt="Cairns" title="Cairns">
+     <area shape="poly" coords="124,106,124,94,112,94,115,99,115,89,77,89,77,99,115,99,112,94,112,106,124,106" href="{%url 'locationfromID' 'IDR173' %}" alt="Broome" title="Broome">
+     <area shape="poly" coords="165,109,177,109,177,97,174,103,228,103,228,93,174,93,174,103,177,97,165,97,165,109" href="{%url 'locationfromID' 'IDR393' %}" alt="Halls Creek" title="Halls Creek">
+     <area shape="poly" coords="349,121,361,121,361,109,357,114,407,114,407,104,357,104,357,114,361,109,349,109,349,121" href="{%url 'locationfromID' 'IDR733' %}" alt="Townsville (Hervey Range)" title="Townsville (Hervey Range)">
+     <area shape="poly" coords="229,124,241,124,241,112,235,113,302,113,302,103,235,103,235,113,241,112,229,112,229,124" href="{%url 'locationfromID' 'IDR653' %}" alt="Tennant Creek" title="Tennant Creek">
+     <area shape="poly" coords="376,114,364,114,364,126,371,123,338,123,338,133,371,133,371,123,364,126,376,126,376,114" href="{%url 'locationfromID' 'IDR243' %}" alt="Bowen" title="Bowen">
+     <area shape="poly" coords="77,131,89,131,89,119,87,127,149,127,149,117,87,117,87,127,89,119,77,119,77,131" href="{%url 'locationfromID' 'IDR163' %}" alt="Port Hedland" title="Port Hedland">
+     <area shape="poly" coords="70,134,70,122,58,122,64,128,64,118,24,118,24,128,64,128,58,122,58,134,70,134" href="{%url 'locationfromID' 'IDR153' %}" alt="Dampier" title="Dampier">
+     <area shape="poly" coords="281,135,293,135,293,123,288,126,334,126,334,116,288,116,288,126,293,123,281,123,281,135" href="{%url 'locationfromID' 'IDR753' %}" alt="Mount Isa" title="Mount Isa">
+     <area shape="poly" coords="375,139,387,139,387,127,384,131,418,131,418,121,384,121,384,131,387,127,375,127,375,139" href="{%url 'locationfromID' 'IDR223' %}" alt="Mackay" title="Mackay">
+     <area shape="poly" coords="32,137,32,149,44,149,45,140,45,150,96,150,96,140,45,140,44,149,44,137,32,137" href="{%url 'locationfromID' 'IDR293' %}" alt="Learmonth" title="Learmonth">
+     <area shape="poly" coords="339,163,339,151,327,151,330,156,330,146,279,146,279,156,330,156,327,151,327,163,339,163" href="{%url 'locationfromID' 'IDR563' %}" alt="Longreach" title="Longreach">
+     <area shape="poly" coords="378,153,366,153,366,165,375,165,336,165,336,175,375,175,375,165,366,165,378,165,378,153" href="{%url 'locationfromID' 'IDR723' %}" alt="Emerald" title="Emerald">
+     <area shape="poly" coords="226,156,226,168,238,168,236,162,236,172,298,172,298,162,236,162,238,168,238,156,226,156" href="{%url 'locationfromID' 'IDR253' %}" alt="Alice Springs" title="Alice Springs">
+     <area shape="poly" coords="395,168,407,168,407,156,404,163,452,163,452,153,404,153,404,163,407,156,395,156,395,168" href="{%url 'locationfromID' 'IDR233' %}" alt="Gladstone" title="Gladstone">
+     <area shape="poly" coords="29,179,41,179,41,167,38,173,88,173,88,163,38,163,38,173,41,167,29,167,29,179" href="{%url 'locationfromID' 'IDR053' %}" alt="Carnarvon" title="Carnarvon">
+     <area shape="poly" coords="183,181,183,169,171,169,174,174,174,164,149,164,149,174,174,174,171,169,171,181,183,181" href="{%url 'locationfromID' 'IDR443' %}" alt="Giles" title="Giles">
+     <area shape="poly" coords="420,191,420,179,408,179,413,185,413,175,377,175,377,185,413,185,408,179,408,191,420,191" href="{%url 'locationfromID' 'IDR083' %}" alt="Gympie (Mt Kanigan)" title="Gympie (Mt Kanigan)">
+     <area shape="poly" coords="369,196,369,184,357,184,361,191,361,181,320,181,320,191,361,191,357,184,357,196,369,196" href="{%url 'locationfromID' 'IDR673' %}" alt="Warrego" title="Warrego">
+     <area shape="poly" coords="420,209,420,197,408,197,413,202,413,192,373,192,373,202,413,202,408,197,408,209,420,209" href="{%url 'locationfromID' 'IDR503' %}" alt="Brisbane (Marburg)" title="Brisbane (Marburg)">
+     <area shape="poly" coords="415,210,427,210,427,198,425,202,468,202,468,192,425,192,425,202,427,198,415,198,415,210" href="{%url 'locationfromID' 'IDR663' %}" alt="Brisbane (Mt Stapylton)" title="Brisbane (Mt Stapylton)">
+     <area shape="poly" coords="39,222,51,222,51,210,47,215,94,215,94,205,47,205,47,215,51,210,39,210,39,222" href="{%url 'locationfromID' 'IDR063' %}" alt="Geraldton" title="Geraldton">
+     <area shape="poly" coords="570,224,570,212,558,212,562,215,562,205,515,205,515,215,562,215,558,212,558,224,570,224" href="{%url 'locationfromID' 'IDR623' %}" alt="Norfolk Island" title="Norfolk Island">
+     <area shape="poly" coords="394,230,394,218,382,218,385,226,385,216,356,216,356,226,385,226,382,218,382,230,394,230" href="{%url 'locationfromID' 'IDR533' %}" alt="Moree" title="Moree">
+     <area shape="poly" coords="412,231,424,231,424,219,422,229,458,229,458,219,422,219,422,229,424,219,412,219,412,231" href="{%url 'locationfromID' 'IDR283' %}" alt="Grafton" title="Grafton">
+     <area shape="poly" coords="105,244,117,244,117,232,115,239,165,239,165,229,115,229,115,239,117,232,105,232,105,244" href="{%url 'locationfromID' 'IDR483' %}" alt="Kalgoorlie" title="Kalgoorlie">
+     <area shape="poly" coords="385,247,397,247,397,235,396,244,427,244,427,234,396,234,396,244,397,235,385,235,385,247" href="{%url 'locationfromID' 'IDR693' %}" alt="Namoi (Blackjack Mountain)" title="Namoi (Blackjack Mountain)">
+     <area shape="poly" coords="254,248,266,248,266,236,263,243,308,243,308,233,263,233,263,243,266,236,254,236,254,248" href="{%url 'locationfromID' 'IDR273' %}" alt="Woomera" title="Woomera">
+     <area shape="poly" coords="236,248,224,248,224,260,229,255,192,255,192,265,229,265,229,255,224,260,236,260,236,248" href="{%url 'locationfromID' 'IDR333' %}" alt="Ceduna" title="Ceduna">
+     <area shape="poly" coords="62,263,62,251,50,251,53,260,53,250,27,250,27,260,53,260,50,251,50,263,62,263" href="{%url 'locationfromID' 'IDR703' %}" alt="Perth (Serpentine)" title="Perth (Serpentine)">
+     <area shape="poly" coords="403,266,415,266,415,254,414,260,461,260,461,250,414,250,414,260,415,254,403,254,403,266" href="{%url 'locationfromID' 'IDR043' %}" alt="Newcastle" title="Newcastle">
+     <area shape="poly" coords="407,278,407,266,395,266,398,269,398,259,363,259,363,269,398,269,395,266,395,278,407,278" href="{%url 'locationfromID' 'IDR713' %}" alt="Sydney (Terrey Hills)" title="Sydney (Terrey Hills)">
+     <area shape="poly" coords="109,267,109,279,121,279,118,274,118,284,167,284,167,274,118,274,121,279,121,267,109,267" href="{%url 'locationfromID' 'IDR323' %}" alt="Esperance" title="Esperance">
+     <area shape="poly" coords="318,284,318,272,306,272,322,273,322,263,286,263,286,273,322,273,306,272,306,284,318,284" href="{%url 'locationfromID' 'IDR303' %}" alt="Mildura" title="Mildura">
+     <area shape="poly" coords="392,272,392,284,404,284,404,276,404,286,463,286,463,276,404,276,404,284,404,272,392,272" href="{%url 'locationfromID' 'IDR033' %}" alt="Wollongong (Appin)" title="Wollongong (Appin)">
+     <area shape="poly" coords="283,289,283,277,271,277,273,283,273,273,233,273,233,283,273,283,271,277,271,289,283,289" href="{%url 'locationfromID' 'IDR643' %}" alt="Adelaide (Buckland Park)" title="Adelaide (Buckland Park)">
+     <area shape="poly" coords="69,280,69,292,81,292,77,288,77,298,109,298,109,288,77,288,81,292,81,280,69,280" href="{%url 'locationfromID' 'IDR313' %}" alt="Albany" title="Albany">
+     <area shape="poly" coords="370,295,370,283,358,283,389,285,389,275,322,275,322,285,389,285,358,283,358,295,370,295" href="{%url 'locationfromID' 'IDR553' %}" alt="Wagga Wagga" title="Wagga Wagga">
+     <area shape="poly" coords="283,285,271,285,271,297,276,296,220,296,220,306,276,306,276,296,271,297,283,297,283,285" href="{%url 'locationfromID' 'IDR463' %}" alt="Adelaide (Sellicks Hill)" title="Adelaide (Sellicks Hill)">
+     <area shape="poly" coords="378,289,378,301,390,301,390,292,390,302,434,302,434,292,390,292,390,301,390,289,378,289" href="{%url 'locationfromID' 'IDR403' %}" alt="Canberra (Captains Flat)" title="Canberra (Captains Flat)">
+     <area shape="poly" coords="356,305,356,293,344,293,346,298,346,288,291,288,291,298,346,298,344,293,344,305,356,305" href="{%url 'locationfromID' 'IDR493' %}" alt="Yarrawonga" title="Yarrawonga">
+     <area shape="poly" coords="305,314,293,314,293,326,297,320,244,320,244,330,297,330,297,320,293,326,305,326,305,314" href="{%url 'locationfromID' 'IDR143' %}" alt="Mt Gambier" title="Mt Gambier">
+     <area shape="poly" coords="344,328,344,316,332,316,358,318,358,308,308,308,308,318,358,318,332,316,332,328,344,328" href="{%url 'locationfromID' 'IDR023' %}" alt="Melbourne" title="Melbourne">
+     <area shape="poly" coords="359,316,359,328,371,328,370,322,370,332,421,332,421,322,370,322,371,328,371,316,359,316" href="{%url 'locationfromID' 'IDR683' %}" alt="Bairnsdale" title="Bairnsdale">
+     <area shape="poly" coords="352,370,352,358,340,358,343,365,343,355,280,355,280,365,343,365,340,358,340,370,352,370" href="{%url 'locationfromID' 'IDR523' %}" alt="NW Tasmania (West Takone)" title="NW Tasmania (West Takone)">
+     <area shape="poly" coords="362,395,374,395,374,383,373,389,406,389,406,379,373,379,373,389,374,383,362,383,362,395" href="{%url 'locationfromID' 'IDR763' %}" alt="Hobart (Mt Koonya)" title="Hobart (Mt Koonya)">
+</map>
+</div>
+<p>Any issues, queries or comments? Please contact Harry at <a href="mailto:h.jack@bom.gov.au">h.jack@bom.gov.au</a></p>
