@@ -12,7 +12,12 @@ Range (km):
     <label>{{ radar.range }}</label>
 {% endfor %}
 <br/>
-Number of frames: <input type="text" name="noofframes" value="18"/>
+Number of frames: <input type="text" name="noofframes" value="12"/>
+<br/>
+Note: the radar images are grabbed from the Bureau's
+<a href="ftp://ftp.bom.gov.au/anon/gen/radar/">ftp site</a>. If more frames
+than are stored on the ftp server are requested, you will simply get a .gif with the number of
+available frames.
 <br/>
 <input type="submit" value="Make .gif" /><br/>
 </form>
